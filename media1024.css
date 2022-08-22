@@ -1,0 +1,448 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@media all and (max-width: 1024px) {
+	/* \\ Affichage // */
+	/* \\ Dimension // */
+	/* \\ Positionnement // */
+	/* \\ Décoration // */
+
+	html {
+		min-width: 900px;
+	}
+
+	/* Contient les tailles de la police */
+	h1 {
+		font-size: 2rem;
+		text-align: center;
+	}
+	h2 {
+		font-size: 2.5rem;
+	}
+	h3 {
+		font-size: 2.2rem;
+	}
+	span {
+		font-size: 1rem;
+	}
+	p {
+		font-size: 1.8rem;
+	}
+	li {
+		font-size: 2rem;
+	}
+
+	/* || Header || */
+
+	/* Logo du site */
+	#container_logo {
+		/* \\ Affichage // */
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	#logo {
+		/* \\ Affichage // */
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		/* \\ Positionnement // */
+		margin-right: 0%;
+		/* \\ Dimension // */
+		width: 100%;
+	}
+
+	#nav_menu {
+		/* \\ Affichage // */
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		/* \\ Dimension // */
+		width: 70%;
+	}
+
+	.menu {
+		/* \\ Affichage // */
+		text-align: center;
+		/* \\ Dimension // */
+		width: 45%;
+		/* \\ Positionnement// */
+		margin-right: 8%;
+		padding: 0rem;
+	}
+
+	.menu a {
+		/* \\ Positionnement// */
+		padding: 0rem;
+	}
+
+	.menu h3 {
+		/* \\ Positionnement // */
+		padding: 0%;
+	}
+
+	#inscription {
+		/* \\ Affichage // */
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		/* \\ Positionnement // */
+		margin-left: 0rem;
+	}
+
+	/*  H1 & P du H1 */
+	h1 {
+		/* \\ Positionnement // */
+		margin-top: 10%;
+	}
+
+	#nature {
+		/* \\ Affichage // */
+		text-align: center;
+		/* \\ Dimension // */
+		font-size: 2rem;
+	}
+
+	/*  Recherche */
+
+	#géoloc {
+		/* \\ Dimension // */
+		font-size: 2.5rem;
+		/* \\ Positionnement // */
+		padding: 3rem;
+	}
+
+	input {
+		/* \\ Positionnement // */
+		padding: 5%;
+		/* \\ Dimension // */
+		width: 100%;
+	}
+
+	::-webkit-input-placeholder {
+		/* \\ Dimension // */
+		font-size: 2rem;
+	}
+
+	::-moz-placeholder {
+		/* \\ Dimension // */
+		font-size: 2rem;
+	}
+
+	:-ms-input-placeholder {
+		/* \\ Dimension // */
+		font-size: 2rem;
+	}
+
+	::-ms-input-placeholder {
+		/* \\ Dimension // */
+		font-size: 2rem;
+	}
+
+	::placeholder {
+		/* \\ Dimension // */
+		font-size: 2rem;
+	}
+
+	#recherche {
+		/* \\ Dimension // */
+		width: 20%;
+	}
+
+	#search_desktop {
+		/* \\ Affichage // */
+		display: none;
+	}
+
+	#search_responsive {
+		/* \\ Affichage // */
+		display: initial;
+		/* \\ Dimension // */
+		font-size: 2rem;
+	}
+
+	/* Filtre */
+	#filter .ecofa {
+		/* \\ Dimension // */
+		width: 100%;
+		/* \\ Affichage // */
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+	#filter span {
+		/* \\ Affichage // */
+		display: none;
+	}
+
+	#filter button {
+		/* \\ Affichage // */
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		/* \\ Décoraton // */
+		width: 40%;
+		border: 0.1rem solid black;
+		/* \\ Dimension // */
+		font-size: 2rem;
+		height: 6rem;
+		/* \\ Positionnement // */
+		margin-left: 3rem;
+		margin-top: 3rem;
+		padding-right: 0rem;
+	}
+
+	#filter i {
+		/* \\ Affichage // */
+		display: none;
+		/* \\ Positionnement // */
+		padding: 2rem;
+		margin-right: 0rem;
+	}
+
+	/* Information */
+	#info {
+		/* \\ Affichage // */
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		/* \\ Positionnement // */
+		margin-top: 1rem;
+	}
+
+	#info p {
+		/* \\ Dimension // */
+		font-size: 2rem;
+	}
+
+	#info i {
+		/* \\ Positionnement // */
+		margin-left: 2rem;
+		/* \\ Dimension // */
+		font-size: 3rem;
+		/* \\ Décoration // */
+		color: var(--bleuFoncé);
+	}
+
+	#info .fa-info-circle {
+		/* \\ Positionnement // */
+		padding-right: 1rem;
+		padding-top: 0.6rem;
+		margin-top: 1.5rem;
+		/* \\ Dimension // */
+		font-size: 2rem;
+	}
+
+	/* || block_container || */
+
+	/* Permet de définir les paramétres du bloc qui va contenir le bloc hébergement et le bloc populaire */
+	#container {
+		-ms-flex-wrap: wrap-reverse;
+		flex-wrap: wrap-reverse;
+	}
+
+	/* || block_1 Hébergement|| */
+	#bloc1 {
+		/* \\ Dimension // */
+		width: 100%;
+		/* \\ Décoration // */
+		background-color: white;
+		/* \\ Positionnement // */
+		margin-right: 0rem;
+	}
+
+	#bloc1 .div_a {
+		/* \\ Positionnement // */
+		margin-right: 0%;
+		/* \\ Dimension // */
+		width: 100%;
+	}
+
+	#bloc1 h2 {
+		/* \\ Positionnement // */
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+
+	#bloc1 figure {
+		/* \\ Positionnement // */
+		margin-top: 8%;
+		margin-right: 1%;
+		margin-left: 0rem;
+		/* \\ Décoration // */
+		-webkit-box-shadow: 7px 11px 15px 1px rgba(114, 113, 111, 0.52);
+		box-shadow: 7px 11px 15px 1px rgba(114, 113, 111, 0.52);
+	}
+
+	#bloc1 img {
+		/* \\ Dimension // */
+		height: 18rem;
+	}
+
+	#bloc1 figcaption {
+		/* \\ Affichage // */
+		text-align: center;
+	}
+
+	#bloc1 h3 {
+		/* \\ Positionnement // */
+		margin: 2%;
+	}
+
+	#bloc1 .fas {
+		margin-top: 1rem;
+		width: 2.5rem;
+		/* \\ Positionnement // */
+		margin-bottom: 2rem;
+		/* \\ Dimension // */
+		font-size: 2rem;
+	}
+
+	/* | Afficher plus | */
+	details {
+		/* \\ Affichage // */
+		text-align: center;
+		/* \\ Dimension // */
+		width: 100%;
+		font-size: 2rem;
+		/* \\ Positionnement // */
+		margin-left: 0rem;
+		margin-top: 10%;
+	}
+
+	/* | Block_2 Populaire| */
+	#bloc2 {
+		/* \\ Positionnement // */
+		margin-bottom: 10%;
+		padding-bottom: 10%;
+		/* \\ Affichage // */
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		/* \\ Dimension // */
+		width: 100%;
+	}
+
+	#bloc2 .logo_head {
+		/* \\ Positionnement // */
+		margin-top: 2.3rem;
+		margin-right: 2.5rem;
+		/* \\ Dimension // */
+		font-size: 2.5rem;
+	}
+
+	#bloc2 figure {
+		/* \\ Positionnement // */
+		margin-bottom: 1%;
+		margin-right: 2%;
+		/* \\ Dimension // */
+		width: 100%;
+		height: auto;
+	}
+
+	#bloc2 img {
+		/* \\ Dimension // */
+		width: 40%;
+		height: auto;
+	}
+
+	#bloc2 figcaption {
+		/* \\ Positionnement // */
+		padding-right: 0%;
+	}
+
+	#bloc2 p {
+		/* \\ Positionnement // */
+		margin-bottom: 4%;
+	}
+
+	#bloc2 i {
+		/* \\ Positionnement // */
+		margin-top: 5%;
+		/* \\ Dimension // */
+		font-size: 2rem;
+		width: 2.5rem;
+	}
+
+	/* || Activité à Marseille || */
+
+	#activity_h3 {
+		/* \\ Dimension // */
+		font-size: 2.5rem;
+	}
+
+	.grid-container {
+		/* \\ Affichage // */
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.grid-container img {
+		/* \\ Dimension // */
+		width: 100%;
+		height: 18em;
+	}
+
+	.grid-container figcaption {
+		/* \\ Affichage // */
+		text-align: center;
+		/* \\ Positionnement // */
+		padding: 3.5%;
+	}
+
+	/* || Footer|| */
+	#footer_border {
+		/* \\ Positionnement // */
+		margin-top: 10%;
+		/* \\ Affichage // */
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+
+	#footer_border #propos {
+		/* \\ Affichage // */
+		text-align: center;
+	}
+
+	#footer_border #hebergement {
+		/* \\ Positionnement // */
+		margin-left: 0%;
+		/* \\ Affichage // */
+		text-align: center;
+	}
+
+	#footer_border #assistance {
+		/* \\ Positionnement // */
+		margin-left: 0%;
+		/* \\ Affichage // */
+		text-align: center;
+	}
+}

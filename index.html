@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta name="author" content="Jérémy Salettes-Wozniak" />
+		<meta
+			name="description"
+			content="Réservia est un site de réservation ayant
+	pour seul but de vous trouvez l'offre d'hébergement qui correspond le plus
+	à vos besoins."
+		/>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Reservia | Site de réservation</title>
+
+		<!-- Font Awesome SVG https://fontawesome.com/v4.7.0/  -->
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+
+		<link rel="icon" href="src/image/logo/reservia.svg" />
+		<link rel="preload" href="media1024.css" as="style" />
+		<link rel="preload" href="media480.css" as="style" />
+		<link rel="preload" href="style.css" as="style" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="media1024.css" />
+		<link rel="stylesheet" type="text/css" href="media480.css" />
+
+		<!-- OG Graph Protocol -->
+
+		<!-- Propriétés structurées -->
+		<!-- Permet de définir le titre -->
+		<meta property="og:title" content="Reservia" />
+		<!-- Permet de d'afficher un descriptif -->
+		<meta
+			property="og:description"
+			content="Réservia est un site de réservation
+	ayant pour seul but de vous trouvez l'offre d'hébergement qui correspond le
+	plus à vos besoins."
+		/>
+		<!-- Permet d'afficher la langue dans laquelle le contenu et balisé -->
+		<meta property="og:locale" content="fr_FR" />
+		<!-- Si le site partie d'un site web plus grand permet d'afficher un nom
+	unique pour l'ensemble du site-->
+		<meta property="og:site_name" content="Reservia" />
+
+		<!-- Image -->
+		<!-- Permet de définir le type de fichier -->
+		<meta property="og:image:type" content="image/png" />
+		<!-- Lien de l'image à afficher et de la dimensionner-->
+		<meta property="og:image" content="src/image/logo/Reservia@3x.png" />
+		<meta property="og:image:width" content="400" />
+		<meta property="og:image:height" content="300" />
+		<!-- Permet de décrire le contenue de l'image référencement -->
+		<meta property="og:image:alt" content="Logo du site reservia" />
+
+		<!-- Affiche le compte twitter du site -->
+		<meta name="twitter:site" content="https://twitter.com/Reservia" />
+		<!-- Affiche le créateur du contenu -->
+		<meta name="twitter:creator" content="https://twitter.com/SalettesJ" />
+	</head>
+	<body>
+		<!-- Marge qui englobe le site sauf le footer -->
+		<div id="marge">
+			<!-- || HEADER || -->
+			<!-- TODO: HEADER -->
+
+			<header>
+				<!-- Logo et menu de navigation -->
+				<div id="container_logo">
+					<!-- Logo du site -->
+					<img id="logo" alt="logo" src="src/image/logo/Reservia@3x.png" />
+					<!-- Menu de navigation -->
+					<div id="nav_menu">
+						<h3 class="menu"><a href="#Hébergements">Hébergements</a></h3>
+						<div>
+							<h3 class="menu"><a href="#Activités">Activités</a></h3>
+						</div>
+					</div>
+					<!-- Menu d'inscription -->
+					<div id="inscription">
+						<h3><a href="pages/inscription.html">S'inscrire</a></h3>
+					</div>
+				</div>
+				<!-- H1 Du site -->
+				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+				<!-- Paragraphe sous H1-->
+				<p id="nature">En plein centre-ville ou en pleine nature</p>
+				<div id="container_recherche">
+					<!-- Icone de géolocalisation du button recherche-->
+					<i id="géoloc" class="fas fa-map-marker-alt"></i>
+					<!-- Zone de saisie du bouton recherche -->
+					<input type="search" name="search" placeholder="Marseille, France" />
+					<!-- Button Envoyer du boutton recherche -->
+					<button id="recherche" type="submit">
+						<!-- Icone ou affichage du button recherche [responsive] -->
+						<i class="fas fa-search" id="search_responsive"></i>
+						<span id="search_desktop">Rechercher</span>
+					</button>
+				</div>
+				<!-- Buttons de filtres -->
+				<div id="filter">
+					<span>Filtres</span>
+					<div class="ecofa">
+						<button value="Économique">
+							<i class="fas fa-money-bill-wave-alt"></i>Économique
+						</button>
+						<button value="Familial">
+							<i class="fas fa-child"></i>Familial
+						</button>
+					</div>
+					<button value="Romantique">
+						<i class="fas fa-heart"></i>Romantique
+					</button>
+					<button value="Animaux">
+						<i class="fas fa-dog"></i>Animaux autorisés
+					</button>
+				</div>
+			</header>
+
+			<!-- || Section 1 Hébergement & Populaire|| -->
+
+			<section>
+				<!-- Icone information + paragraphe -->
+				<div id="info">
+					<i class="fas fa-info-circle"></i>
+					<p>Plus de 500 logements sont disponibles dans cette ville</p>
+				</div>
+
+				<!-- Bloc flexbox -->
+				<div id="container">
+					<div id="bloc1">
+						<!-- Bloc Hébergement -->
+						<a id="Hébergements"></a>
+						<h2>Hébergements à Marseille</h2>
+						<div class="div_a">
+							<a href="">
+								<figure>
+									<img
+										alt="Chambre de l'Auberge la Cannebière"
+										src="src/image/hebergement/img1.jpg"
+									/>
+									<figcaption>
+										<h3>Auberge la Cannebière</h3>
+										<p>Nuit à partir de 25€</p>
+										<i class="fas fa-star"></i><i class="fas fa-star"></i
+										><i class="fas fa-star"></i><i class="fas fa-star"></i
+										><i class="fas fa-star grey_star"></i>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						<div class="div_a">
+							<a href="">
+								<figure>
+									<img
+										alt="Chambre de l'Hôtel du port"
+										src="src/image/hebergement/img2.jpg"
+									/>
+									<figcaption>
+										<h3>Hôtel du port</h3>
+										<p>Nuit à partir de 52€</p>
+										<i class="fas fa-star"></i><i class="fas fa-star"></i
+										><i class="fas fa-star"></i><i class="fas fa-star"></i
+										><i class="fas fa-star"></i>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						<div class="div_a">
+							<a href="">
+								<figure>
+									<img
+										alt="Chambre de l'Hôtel les mouettes"
+										src="src/image/hebergement/img3.jpg"
+									/>
+									<figcaption>
+										<h3>Hôtel les mouettes</h3>
+										<p>Nuit à partir de 76€</p>
+										<i class="fas fa-star"></i><i class="fas fa-star"></i
+										><i class="fas fa-star"></i><i class="fas fa-star"></i
+										><i class="fas fa-star grey_star"></i>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						<div class="div_a">
+							<a href="">
+								<figure>
+									<img
+										alt="Chambre de l'Hôtel de la mer"
+										src="src/image/hebergement/img4.jpg"
+									/>
+									<figcaption>
+										<h3>Hôtel de la mer</h3>
+										<p>Nuit à partir de 46€</p>
+										<i class="fas fa-star"></i><i class="fas fa-star"></i
+										><i class="fas fa-star"></i
+										><i class="fas fa-star grey_star"></i
+										><i class="fas fa-star grey_star"></i>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						<div class="div_a">
+							<a href="">
+								<figure>
+									<img
+										alt="Chambre de l'Auberge le Panier"
+										src="src/image/hebergement/img5.jpg"
+									/>
+									<figcaption>
+										<h3>Auberge le Panier</h3>
+										<p>Nuit à partir de 23€</p>
+										<i class="fas fa-star"></i><i class="fas fa-star"></i
+										><i class="fas fa-star"></i><i class="fas fa-star"></i
+										><i class="fas fa-star grey_star"></i>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						<div class="div_a">
+							<a href="">
+								<figure>
+									<img
+										alt="Chambre de l'Hôtel chez Amina"
+										src="src/image/hebergement/img6.jpg"
+									/>
+									<figcaption>
+										<h3>Hôtel chez Amina</h3>
+										<p>Nuit à partir de 96€</p>
+										<i class="fas fa-star"></i><i class="fas fa-star"></i
+										><i class="fas fa-star"></i><i class="fas fa-star"></i
+										><i class="fas fa-star"></i>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						<details>
+							<summary>Afficher plus</summary>
+						</details>
+					</div>
+					<!-- Bloc populaire -->
+					<div id="bloc2">
+						<div id="sub_bloc2">
+							<h2>Les plus populaires</h2>
+							<i class="fas fa-chart-line logo_head"></i>
+						</div>
+						<div class="div_a">
+							<a href="">
+								<figure>
+									<img
+										alt="Chambre de l'Hôtel Le soleil du matin"
+										src="src/image/hebergement/img7.jpg"
+									/>
+									<figcaption>
+										<h3>Hôtel Le soleil du matin</h3>
+										<p>Nuit à partir de 128€</p>
+										<i class="fas fa-star"></i><i class="fas fa-star"></i
+										><i class="fas fa-star"></i><i class="fas fa-star"></i
+										><i class="fas fa-star"></i>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						<div class="div_a">
+							<a href="">
+								<figure>
+									<img
+										alt="Chambre au coeur de l'eau Chambre d'hôtes"
+										src="src/image/hebergement/img8.jpg"
+									/>
+									<figcaption>
+										<h3>Au coeur de l'eau Chambres d'hôtes</h3>
+										<p>Nuit à partir de 71€</p>
+										<i class="fas fa-star"></i><i class="fas fa-star"></i
+										><i class="fas fa-star"></i><i class="fas fa-star"></i
+										><i class="fas fa-star grey_star"></i>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						<div class="div_a">
+							<a href="">
+								<figure>
+									<img
+										alt="Chambre de l'Hôtel Tout bleu et Blanc"
+										src="src/image/hebergement/img9.jpg"
+									/>
+									<figcaption>
+										<h3>Hôtel Tout bleu et Blanc</h3>
+										<p>Nuit à partir de 68€</p>
+										<i class="fas fa-star"></i><i class="fas fa-star"></i
+										><i class="fas fa-star"></i><i class="fas fa-star"></i
+										><i class="fas fa-star grey_star"></i>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- || Activité à Marseille || -->
+
+			<section>
+				<!-- GRID -->
+				<a id="Activités"></a>
+				<h3 id="activity_h3">Activité à Marseille</h3>
+				<div class="grid-container">
+					<a href="" class="c1">
+						<figure>
+							<img alt="Le Vieux Port" src="src/image/activity/c1.jpg" />
+							<figcaption><h3>Vieux Port</h3></figcaption>
+						</figure>
+					</a>
+					<a href="" class="c2">
+						<figure>
+							<img alt="Le Fort de Pomègues" src="src/image/activity/c2.jpg" />
+							<figcaption><h3>Fort de Pomègues</h3></figcaption>
+						</figure>
+					</a>
+					<a href="" class="c3">
+						<figure>
+							<img alt="L'îles du Frioul" src="src/image/activity/c3.jpg" />
+							<figcaption><h3>Îles du Frioul</h3></figcaption>
+						</figure>
+					</a>
+					<a href="" class="c4">
+						<figure>
+							<img
+								alt="Le Parc National des Calanques"
+								src="src/image/activity/c4.jpg"
+							/>
+							<figcaption><h3>Parc National des Calanques</h3></figcaption>
+						</figure>
+					</a>
+					<a href="" class="c5">
+						<figure>
+							<img
+								alt="Notre-Dame-de-la-Garde"
+								src="src/image/activity/c5.jpg"
+							/>
+							<figcaption><h3>Notre-Dame-de-la-Garde</h3></figcaption>
+						</figure>
+					</a>
+					<a href="" class="c6">
+						<figure>
+							<img alt="Parc Longchamp" src="src/image/activity/c6.jpg" />
+							<figcaption><h3>Parc Longchamp</h3></figcaption>
+						</figure>
+					</a>
+				</div>
+			</section>
+		</div>
+
+		<!-- || Footer || -->
+
+		<footer>
+			<div id="footer_border">
+				<div id="propos">
+					<h3>A propos</h3>
+					<ul>
+						<li><p>Fonctionnement du site</p></li>
+						<li><p>Condition générales de vente</p></li>
+						<li><p>Données et confidentialité</p></li>
+					</ul>
+				</div>
+				<div id="hebergement">
+					<h3>Nos hébergements</h3>
+					<ul>
+						<li><p>Charte qualité</p></li>
+						<li><p>Soumettre votre hôtel</p></li>
+					</ul>
+				</div>
+				<div id="assistance">
+					<h3>Assistance</h3>
+					<ul>
+						<li><p>Centre d'aide</p></li>
+						<li><p>Nous contacter</p></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
